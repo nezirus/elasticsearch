@@ -37,7 +37,7 @@ import java.util.stream.Stream;
 
 public class IngestUserAgentPlugin extends Plugin implements IngestPlugin {
 
-    private final Setting<Long> CACHE_SIZE_SETTING = Setting.longSetting("ingest.user_agent.cache_size", 1000, 0,
+    public final Setting<Long> CACHE_SIZE_SETTING = Setting.longSetting("ingest.user_agent.cache_size", 1000, 0,
             Setting.Property.NodeScope);
 
     static final String DEFAULT_PARSER_NAME = "_default_";
